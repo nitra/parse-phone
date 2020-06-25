@@ -1,0 +1,25 @@
+{
+  "name": "@nitra/parse-phone",
+  "version": "1.0.3",
+  "description": "make world phone number (Ru, Ukr)",
+  "type": "module",
+  "exports": {
+    "import": "./index.mjs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nitra/parse-phone.git"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "author": "nitra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nitra/parse-phone/issues"
+  },
+  "homepage": "https://github.com/nitra/parse-phone#readme"
+}
