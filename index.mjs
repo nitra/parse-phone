@@ -15,8 +15,8 @@ export const parsePhone = (phone) => {
   // С "+7 913 065 89 17" трансформируем в "79130658917"
   phoneStr = phone.replace(/[^0-9]/g, "");
   
-  // Прибираємо нулі на початку рядка
-  phoneStr = phoneStr.replace(/^0+/, '')
+  // Прибираємо 2 нулі на початку рядка
+  phoneStr = phoneStr.replace(/^00/, '')
 
   // Если телефон из 11 цифр и первая 8, например "89609415289"
   if (phoneStr.length === 11 && phoneStr.startsWith("8")) {
