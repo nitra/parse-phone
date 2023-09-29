@@ -2,11 +2,11 @@
  * Перетворення номера на міжнародний формат
  *
  * @param {String} phone
- * @return {String} Телефон у міжнародному форматі або null якщо не розпізнано
+ * @return {String|null} Телефон у міжнародному форматі або null якщо не розпізнано
  */
 export const parsePhone = phone => {
   if (!phone) {
-    return ''
+    return null
   }
 
   /** @type {String} */
@@ -49,5 +49,5 @@ export const parsePhone = phone => {
   }
 
   // Не вдалось розпізнати номер
-  return ''
+  return null
 }
