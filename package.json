@@ -1,25 +1,26 @@
 {
-  "name": "@nitra/parse-phone",
-  "version": "1.0.3",
-  "description": "make world phone number (Ru, Ukr)",
+  "name": "nitra-parse-phone",
+  "description": "telegram helper",
+  "version": "1.0.0",
   "type": "module",
-  "exports": {
-    "import": "./index.mjs"
+  "workspaces": [
+    "demo",
+    "npm"
+  ],
+  "bugs": "https://github.com/nitra/parse-phone/issues",
+  "homepage": "https://github.com/nitra/parse-phone",
+  "prettier": "@nitra/prettier-config",
+  "eslintConfig": {
+    "extends": [
+      "@nitra"
+    ],
+    "root": true
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "devDependencies": {
+    "@nitra/cspell-dict": "^1.0.70",
+    "@nitra/eslint-config": "^1.0.24",
+    "@nitra/prettier-config": "^1.0.1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nitra/parse-phone.git"
-  },
-  "engines": {
-    "node": ">=10.0.0"
-  },
-  "author": "nitra",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/nitra/parse-phone/issues"
-  },
-  "homepage": "https://github.com/nitra/parse-phone#readme"
+  "packageManager": "yarn@3.6.3"
 }
